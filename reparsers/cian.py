@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from socket import timeout
 import sys
 import time
+from abstract_parser import AbstractParser
 
 __classes__ = [
     'serp-item__price-col',
@@ -14,7 +15,7 @@ __classes__ = [
 ]
 
 
-class Cian(object):
+class Cian(AbstractParser):
     def __init__(self):
         super(Cian, self).__init__()
 
